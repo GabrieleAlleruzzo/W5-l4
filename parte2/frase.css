@@ -8,3 +8,54 @@
 7 ritardare progressivamente l'animazione delle altre 2 parole 
 */
 
+body {
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #ffffff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#testoAlternato {
+    padding: 1.8em;
+    margin: 2rem;
+    border: solid 0.1em;
+    line-height: 1.5em;
+    position: relative;
+    width: 80%;
+}
+
+.parole {
+   padding-left: 5px;
+    color: cadetblue;
+    position: absolute;
+    overflow: hidden;
+    /* border: solid 1px red; */
+    height: 20px;
+}
+
+@keyframes slot-machine {
+    0% {
+        transform: translatey(0px);
+    }
+
+    50% {
+        transform: translatey(-20px);
+    }
+    
+    100% {
+        transform: translatey(-40px);
+    }
+    
+}
+
+i {
+    animation: none;
+     }
+
+i:hover {
+animation: slot-machine 6s linear infinite;
+ }
