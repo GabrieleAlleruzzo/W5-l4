@@ -1,0 +1,51 @@
+body {
+    font-family: "Indie Flower", cursive;
+    font-weight: 400;
+    font-style: normal;
+    background-color: dimgray;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+
+h1 {
+    font-size: 2em;
+}
+p {
+    font-size: 1.25em;
+}
+
+.post-y, .post-v ,.post-g {
+    padding: 1em;
+    height: 170px;
+    width: 170px;
+     margin: 0.6em; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 4px 4px 8px 0.4px #333333;
+}
+
+.post-y {
+    background-color: darkkhaki;
+    transform: rotate(-5deg);
+}
+.post-v {
+    background-color: rgb(203, 79, 199);
+    transform: rotate(-5deg);
+}
+.post-g {
+    background-color: rgb(83, 210, 159);
+    transform: rotate(5deg);
+}
