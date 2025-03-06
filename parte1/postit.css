@@ -22,7 +22,7 @@ h1 {
     font-size: 2em;
 }
 p {
-    font-size: 1.25em;
+    font-size: 1em;
 }
 
 .post-y, .post-v ,.post-g {
@@ -34,18 +34,54 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: left;
     box-shadow: 4px 4px 8px 0.4px #333333;
+    
 }
 
 .post-y {
-    background-color: darkkhaki;
+    
+    background: linear-gradient(to bottom, rgb(245, 238, 153),rgb(245, 238, 153),rgb(245, 238, 153),darkkhaki,  rgb(120, 116, 58));
     transform: rotate(-5deg);
 }
 .post-v {
-    background-color: rgb(203, 79, 199);
+    background: linear-gradient(to bottom, rgb(203, 79, 199), rgb(203, 79, 199),rgb(203, 79, 199),rgb(202, 81, 198),   rgb(126, 49, 124));
     transform: rotate(-5deg);
 }
 .post-g {
-    background-color: rgb(83, 210, 159);
+    
+    background: linear-gradient(to bottom, rgb(83, 210, 159), rgb(83, 210, 159), rgb(83, 210, 159), rgb(65, 173, 130),  rgb(44, 126, 93));
     transform: rotate(5deg);
+    
 }
+
+
+@keyframes scale-hover {
+    0%{
+        transform: scale(100%);
+    }
+    50%{
+        transform: scale(200%);
+    }
+
+    100%{
+        transform: scale(180%);
+    }
+}
+
+.post-g:hover, .post-y:hover, .post-v:hover {
+    animation: scale-hover 0.5s linear 0s forwards;
+    animation-play-state:running;
+    z-index: 10
+}
+
+
+/*
+.scale {
+    transform: scale(100%);
+}
+
+.scale:hover {
+    transform: scale(150%);
+}
+*/
